@@ -1,0 +1,279 @@
+/* section 묶음 */
+section {
+    padding:150px 0;
+}
+/* title 묶음 */
+section .txt .title {
+    text-align: center;
+    font-size: 3.125rem; letter-spacing:-0.02em;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #1B3601;
+}
+/* section01 */
+.section01_bg {
+    width:100%;  margin: 0 auto;
+    background:url(../images/bg_1.png) no-repeat center 80%;
+    background-size:100%;
+}
+.section01_bg .section01 {
+    width:calc(100% - 240px); margin:0 auto;
+    display: flex; flex-flow: column nowrap;
+    align-items: end;
+    padding-bottom:443px;
+}
+.section01_bg .section01 .minititle {
+    border: 2px solid #fff;
+    border-radius: 30px;
+    display: inline;
+    color: #fff;
+    padding:12px 20px;
+    font-size: 1.2rem; letter-spacing:-0.02em;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.section01_bg .section01 h1 {
+    text-align: end;
+    font-size: 5rem; letter-spacing:-0.02em;
+    font-weight: 300;
+    line-height: 105px;
+    border-bottom: 2px solid #1B3601;
+    color: #1B3601;
+    margin-bottom: 40px;
+}
+.section01_bg .section01 h1 em {
+    font-size: 6.25rem; letter-spacing:-0.02em;
+    font-weight: 700;
+}
+.section01_bg .section01 h2 {
+    font-size: 2.074rem; letter-spacing:-0.02em;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* section02 */
+.section02_bg {background:#C8D6BA;}
+.section02_bg .section02 {width:calc(100% - 240px); margin:0 auto;}
+.section02_bg .section02 .txt .title {
+    display: flex; color: #1B3601;
+    align-items: center; justify-content: center;
+}
+.section02_bg .section02 .txt .title img {width:45px; margin-left: 10px;}
+.section02_bg .section02 iframe {width:100%;}
+
+/* section03 */
+.section03 {background:#799B44;}
+.section03 .txt {margin-bottom: 50px;}
+.section03 .txt .minititle {
+    margin-top:-20px; text-align: center;
+    font-size: 1.44rem; letter-spacing:-0.02em;
+    color: #fff;
+}
+.section03 .txt .minititle em {
+    font-weight: 700;
+    font-size: 1.44rem; letter-spacing:-0.02em;
+}
+.section03 .con {
+    display: flex; justify-content: space-between;
+    width: calc(100% - 700px); margin: 0 auto;
+    margin-bottom: 50px;
+}
+.section03 .con img {width: 550px;}
+.section03 .info {
+    display: flex; flex-flow: column nowrap; 
+    align-items: center; justify-content: center;
+}
+.section03 .info button {
+    font-size: 1.44rem; letter-spacing: -0.02em;
+    font-weight: 700; color: #fff;
+    padding:20px 80px;
+    background:#1B3601;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+.section03 .info .period {
+    display: flex; align-items: center;
+    color: #fff;
+}
+.section03 .info .period > div {display: flex;}
+.section03 .info .period > div .p_tit {
+    font-weight: 700; margin-right: 10px; font-size:1.2rem;
+    letter-spacing:-0.02em;
+}
+.section03 .info .period > div .p_con {letter-spacing:-0.02em; font-size:1.2rem;}
+.section03 .info .period > p {margin: 0 20px;}
+
+/* section04 */
+.section04_bg {
+    background: url(../images/bg_4.png) no-repeat center 80%;
+    background-size: cover;
+}
+.section04_bg .section04 {
+    width:calc(100% - 240px); margin: 0 auto;
+}
+.section04_bg .section04 .txt {margin-bottom:20px;}
+.section04_bg .section04 .txt .title {}
+.section04_bg .section04 .txt .title em {
+    font-size: 3.125rem; letter-spacing:-0.02em;
+    font-weight: 700; color: #fff;
+}
+.section04_bg .section04 .txt .minititle {
+    margin-top:-20px; 
+    text-align: center;
+    font-size: 1.44rem; letter-spacing:-0.02em;
+    color: #1B3601;
+}
+.section04_bg .section04 .txt .minititle em {
+    font-size: 1.44rem; letter-spacing:-0.02em;
+    color: #1B3601; font-weight: 700;
+}
+.section04_bg .section04 .con {
+    display: flex; flex-flow: column nowrap;
+    align-items: center;
+}
+.section04_bg .section04 .con > div {
+    display: flex; align-items: center;
+    width:450px; padding:20px 90px;
+    background:#1B3601;
+    border-radius: 50px;
+    margin-top:30px;
+}
+.section04_bg .section04 .con > div img {margin-right:50px;}
+.section04_bg .section04 .con > div p {
+    font-size:1.44rem; letter-spacing:-0.02;
+    color: #C8D6BA;
+}
+.section04_bg .section04 .info {
+    font-weight: 500; letter-spacing:-0.02em;
+    text-align: end; color: #1B3601;
+    margin-top:90px;
+}
+
+/* section05 */
+.section05_bg {
+    background: url(../images/bg_5.png) no-repeat center 10%;
+    background-size: cover;
+}
+.section05_bg .section05 {
+    width:calc(100% - 240px ); margin: 0 auto;
+}
+.section05_bg .section05 .txt {}
+.section05_bg .section05 .txt .title {}
+.section05_bg .section05 .txt .title em {
+    font-size: 3.125rem; letter-spacing:-0.02em;
+    font-weight: 700; color: #C4E347;
+}
+.section05_bg .section05 .con {
+    display: flex; flex-flow: column nowrap;
+}
+.section05_bg .section05 .con >div {
+    display: flex; align-items: center; justify-content: space-between;
+    width: 100%; 
+}
+.section05_bg .section05 .con >div .c_t_txt {}
+.section05_bg .section05 .con >div .c_t_txt .c_tit {
+    font-size: 2.074rem; letter-spacing:-0.02em;
+    font-weight: 700; color: #fff;
+    margin-bottom: 30px;
+}
+.section05_bg .section05 .con >div .c_t_txt .info {
+    font-size: 1.728rem; letter-spacing:-0.02em;
+    color: #fff; line-height: 40px;
+}
+.section05_bg .section05 .con >div img {width:50%; height: 400px;}
+.section05_bg .section05 .con .c_top {
+    margin-bottom:50px;
+}
+.section05_bg .section05 .con .c_top .c_t_txt {
+    text-align: end;
+    padding-left: 200px;
+}
+.section05_bg .section05 .con .c_top .c_t_txt .c_tit {}
+.section05_bg .section05 .con .c_top .c_t_txt .info {}
+.section05_bg .section05 .con .c_top img {
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+}
+.section05_bg .section05 .con .c_btm {
+    padding-right:150px;
+}
+.section05_bg .section05 .con .c_btm img {
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+.section05_bg .section05 .con .c_btm .c_t_txt {}
+.section05_bg .section05 .con .c_btm .c_t_txt .c_tit {}
+.section05_bg .section05 .con .c_btm .c_t_txt .info {}
+.section05_bg .section05 .con .c_btm .c_t_txt .complex {
+    margin-top:50px;
+    letter-spacing:-0.02em;
+    color: #fff; line-height:29px;
+}
+
+/* section06 */
+.section06_bg {background:#C8D6BA;}
+.section06_bg .section06 {
+    width:calc(100% - 240px); margin: 0 auto;
+}
+.section06_bg .section06 .con {}
+.section06_bg .section06 .con ul {
+    display: flex; justify-content: space-between;
+}
+.section06_bg .section06 .con ul li {
+    background:#1B3601; 
+    width:30%; height:400px;
+    display: flex; flex-flow: column nowrap;
+    align-items: center; justify-content: center;
+    border-bottom-left-radius: 200px;
+    border-top-right-radius: 200px;
+    /* border-radius: 200px; */
+    /* border-bottom-right-radius: 200px; */
+}
+.section06_bg .section06 .con ul li .first {
+    font-size: 2.074rem; letter-spacing:-0.02em;
+    font-weight: 700; color: #C4E347;
+    margin-bottom:50px;
+}
+.section06_bg .section06 .con ul li .last {
+    font-size: 1.44rem; letter-spacing:-0.02em;
+    line-height: 35px; color: #C8D6BA;
+    width:250px; font-weight: 300;
+}
+
+/* section07 */
+.section07_bg {
+    background: url(../images/bg_7.png) no-repeat center;
+    background-size: cover;
+}
+.section07_bg .section07 {
+    width: calc(100% - 240px); margin: 0 auto;
+    padding:50px 0;
+    background: rgba(255, 255, 255, 0.80);
+}
+.section07_bg .section07 .con {}
+.section07_bg .section07 .con ul {
+    display: flex; flex-flow: column nowrap; 
+    align-items: center; /* justify-content: center; */
+}
+.section07_bg .section07 .con ul li {}
+.section07_bg .section07 .con ul li:first-child {margin-bottom:70px;}
+.section07_bg .section07 .con ul li .question {display:flex; margin-bottom:50px;}
+.section07_bg .section07 .con ul li .question .alphabet {
+    font-size: 1.728rem; font-weight: 700; color: #799B44;
+    margin-right:20px;
+}
+.section07_bg .section07 .con ul li .question .info {
+    font-size: 1.728rem; letter-spacing:-0.02em; 
+    font-weight: 700; color: #799B44;
+}
+.section07_bg .section07 .con ul li .answer {display:flex;}
+.section07_bg .section07 .con ul li .answer .alphabet {
+    font-size: 1.728rem; font-weight: 700; 
+    margin-right:20px; color: #1B3601;
+}
+.section07_bg .section07 .con ul li .answer .info {
+    width:1000px;
+    font-size: 1.44rem; letter-spacing:-0.02em;
+    font-weight: 500; color: #1B3601;
+    margin-right:20px; line-height: 35px;
+}
