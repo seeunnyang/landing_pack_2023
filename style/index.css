@@ -41,15 +41,15 @@ section .txt .title {
 /* section01 */
 .section01_bg {
     width:100%;  margin: 0 auto;
-    background:url(../images/bg_1.png) no-repeat center 80%;
+    background:url(../images/bg_1.png) no-repeat center 100%;
     background-size:100%;
-    position: relative; /* 마우스 포지션 기준 */
+    position: relative; /* 마우스 img 기준 */
 }
 .section01_bg .section01 {
     width:calc(100% - 240px); margin:0 auto;
     display: flex; flex-flow: column nowrap;
     align-items: end;
-    padding-bottom:443px;
+    padding-bottom:400px;
 }
 .section01_bg .section01 .minititle {
     border: 2px solid #fff;
@@ -79,7 +79,7 @@ section .txt .title {
     font-weight: 500;
     color: #fff;
 }
-.section01_bg img {
+.section01_bg #mouse {
     position:absolute;
     left:50%; bottom:270px;
     width:60px;
@@ -104,7 +104,10 @@ section .txt .title {
 .section02_bg .section02 iframe {width:1000px; height:700px;}
 
 /* section03 */
-.section03 {background:#799B44;}
+.section03 {
+    background:#799B44;
+    display: flex; flex-flow: column nowrap; align-items: center; justify-content: center;
+}
 .section03 .txt {margin-bottom: 50px;}
 .section03 .txt .minititle {
     margin-top:-20px; text-align: center;
@@ -116,11 +119,12 @@ section .txt .title {
     font-size: 1.44rem; letter-spacing:-0.02em;
 }
 .section03 .con {
-    display: flex; justify-content: space-between;
-    width: calc(100% - 700px); margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    /* width: calc(100% - 700px);  */
+    margin: 0 auto;
     margin-bottom: 50px;
 }
-.section03 .con img {width: 550px;}
+.section03 .con img {width: 450px;}
 .section03 .info {
     display: flex; flex-flow: column nowrap; 
     align-items: center; justify-content: center;
@@ -199,7 +203,7 @@ section .txt .title {
 
 /* section05 */
 .section05_bg {
-    background: url(../images/bg_5.png) no-repeat center 10%;
+    background: url(../images/bg_5.png) no-repeat center 50%;
     background-size: cover;
 }
 .section05_bg .section05 {
@@ -215,10 +219,12 @@ section .txt .title {
     display: flex; flex-flow: column nowrap;
 }
 .section05_bg .section05 .con >div {
-    display: flex; align-items: center; justify-content: space-between;
+    display: flex; align-items:center;
     width: 100%; 
 }
-.section05_bg .section05 .con >div .c_t_txt {}
+.section05_bg .section05 .con >div .c_t_txt {
+    display: flex; flex-flow: column nowrap; 
+}
 .section05_bg .section05 .con >div .c_t_txt .c_tit {
     font-size: 2.074rem; letter-spacing:-0.02em;
     font-weight: 700; color: #fff;
@@ -228,33 +234,32 @@ section .txt .title {
     font-size: 1.728rem; letter-spacing:-0.02em;
     color: #fff; line-height: 40px;
 }
-.section05_bg .section05 .con >div img {width:50%; height: 400px;}
+.section05_bg .section05 .con >div img {width:50%; }
 .section05_bg .section05 .con .c_top {
     margin-bottom:50px;
+    justify-content: flex-end;
 }
-.section05_bg .section05 .con .c_top .c_t_txt {
-    text-align: end;
-    padding-left: 200px;
-}
+.section05_bg .section05 .con .c_top .c_t_txt {align-items: end;}
 .section05_bg .section05 .con .c_top .c_t_txt .c_tit {}
-.section05_bg .section05 .con .c_top .c_t_txt .info {}
+.section05_bg .section05 .con .c_top .c_t_txt .info {text-align: end;}
 .section05_bg .section05 .con .c_top img {
     border-top-left-radius: 200px;
     border-bottom-left-radius: 200px;
+    margin-left: 50px;
 }
 .section05_bg .section05 .con .c_btm {
-    padding-right:150px;
+    justify-content: flex-start;
 }
 .section05_bg .section05 .con .c_btm img {
     border-top-right-radius: 200px;
     border-bottom-right-radius: 200px;
+    margin-right: 50px;
 }
 .section05_bg .section05 .con .c_btm .c_t_txt {}
 .section05_bg .section05 .con .c_btm .c_t_txt .c_tit {}
 .section05_bg .section05 .con .c_btm .c_t_txt .info {}
 .section05_bg .section05 .con .c_btm .c_t_txt .complex {
-    margin-top:50px;
-    letter-spacing:-0.02em;
+    margin-top:50px; letter-spacing:-0.02em;
     color: #fff; line-height:29px;
 }
 
@@ -271,21 +276,22 @@ section .txt .title {
     background:#1B3601; 
     width:30%; height:400px;
     display: flex; flex-flow: column nowrap;
-    align-items: center; justify-content: center;
+    align-items:center; justify-content:center;
+    /* padding: 0 10px; */
     border-bottom-right-radius: 200px;
     border-top-left-radius: 200px;
     transition: all 0.5s;
 }
 .section06_bg .section06 .con ul li:nth-child(1):hover {
-    background:url(../images/hover_01.png) no-repeat center;
+    background:url(../images/hover_01.png) no-repeat center 100%;
     background-size: cover;
 }
 .section06_bg .section06 .con ul li:nth-child(2):hover {
-    background:url(../images/hover_02.png) no-repeat center;
+    background:url(../images/hover_02.png) no-repeat center 100%;
     background-size: cover;
 }
 .section06_bg .section06 .con ul li:nth-child(3):hover {
-    background:url(../images/hover_03.png) no-repeat center;
+    background:url(../images/hover_03.png) no-repeat center 100%;
     background-size: cover;
 }
 .section06_bg .section06 .con ul li:hover > * {display: none;}
@@ -298,7 +304,6 @@ section .txt .title {
     font-size: 1.44rem; letter-spacing:-0.02em;
     line-height: 35px; color: #C8D6BA;
     width:250px; 
-    /* font-weight: 300; */
 }
 
 /* section07 */
@@ -310,11 +315,13 @@ section .txt .title {
     width: calc(100% - 240px); margin: 0 auto;
     padding:50px 0;
     background: rgba(255, 255, 255, 0.80);
+    display: flex; flex-flow: column nowrap; align-items:center;
 }
 .section07_bg .section07 .con {}
 .section07_bg .section07 .con ul {
+    width:900px;
     display: flex; flex-flow: column nowrap; 
-    align-items: center; /* justify-content: center; */
+    align-items: center;
 }
 .section07_bg .section07 .con ul li {}
 .section07_bg .section07 .con ul li:first-child {margin-bottom:70px;}
@@ -333,7 +340,6 @@ section .txt .title {
     margin-right:20px; color: #1B3601;
 }
 .section07_bg .section07 .con ul li .answer .info {
-    width:1000px;
     font-size: 1.44rem; letter-spacing:-0.02em;
     font-weight: 500; color: #1B3601;
     margin-right:20px; line-height: 35px;
