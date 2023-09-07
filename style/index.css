@@ -10,14 +10,15 @@
     border:2px solid #C8D6BA;
     border-radius:30px;
     transition: all 0.5s;
-    background:linear-gradient(-45deg, #C8D6BA, #799B44, #3B6018, #1B3601);
-    background-size:200%; 
-    animation: bg 3s ease alternate infinite;
+    background:linear-gradient(-45deg,#1B3601,#3B6018,#799B44,#C8D6BA,#799B44,#3B6018,#1B3601);
+    background-size:500%; 
+    animation: bg 5s ease alternate infinite;
 }
 .order #order_btn:hover {
     background:#1B3601;
     color: #fff;
     border:2px solid #1B3601;
+    box-shadow: 1px 1px 5px 1px #1B3601;
 }
 @keyframes bg {
     0% {background-position: 0 0;}
@@ -41,8 +42,8 @@ section .txt .title {
 /* section01 */
 .section01_bg {
     width:100%;  margin: 0 auto;
-    background:url(../images/bg_1.png) no-repeat center 100%;
-    background-size:100%;
+    background:url(../images/bg_1.png) no-repeat left center;
+    background-size:cover;
     position: relative; /* 마우스 img 기준 */
 }
 .section01_bg .section01 {
@@ -106,25 +107,26 @@ section .txt .title {
 /* section03 */
 .section03 {
     background:#799B44;
-    display: flex; flex-flow: column nowrap; align-items: center; justify-content: center;
+    display:flex; flex-flow:column nowrap; 
+    align-items:center; justify-content:center;
 }
 .section03 .txt {margin-bottom: 50px;}
 .section03 .txt .minititle {
-    margin-top:-20px; text-align: center;
-    font-size: 1.44rem; letter-spacing:-0.02em;
+    margin-top:-20px; text-align:center;
+    font-size:1.44rem; letter-spacing:-0.02em;
     color: #fff;
 }
 .section03 .txt .minititle em {
-    font-weight: 700;
-    font-size: 1.44rem; letter-spacing:-0.02em;
+    font-weight:700;
+    font-size:1.44rem; letter-spacing:-0.02em;
 }
 .section03 .con {
     display: flex; align-items: center; justify-content: space-between;
-    /* width: calc(100% - 700px);  */
     margin: 0 auto;
     margin-bottom: 50px;
 }
 .section03 .con img {width: 450px;}
+.section03 .con img:first-child {margin-right: 80px;}
 .section03 .info {
     display: flex; flex-flow: column nowrap; 
     align-items: center; justify-content: center;
@@ -138,7 +140,9 @@ section .txt .title {
     border-radius: 30px;
 }
 .section03 .info button:hover {
-    box-shadow: 1px 1px 10px 1px #1B3601;
+    background:#C4E347;
+    color: #1B3601;
+    box-shadow: 3px 3px 5px 1px #252525;
 }
 .section03 .info .period {
     display: flex; align-items: center;
@@ -207,7 +211,7 @@ section .txt .title {
     background-size: cover;
 }
 .section05_bg .section05 {
-    width:calc(100% - 240px ); margin: 0 auto;
+    width:calc(100% - 240px); margin: 0 auto;
 }
 .section05_bg .section05 .txt {}
 .section05_bg .section05 .txt .title {}
@@ -234,7 +238,8 @@ section .txt .title {
     font-size: 1.728rem; letter-spacing:-0.02em;
     color: #fff; line-height: 40px;
 }
-.section05_bg .section05 .con >div img {width:50%; }
+.section05_bg .section05 .con >div .d_timg {width:45%;}
+.section05_bg .section05 .con >div .t_img {display: none;}
 .section05_bg .section05 .con .c_top {
     margin-bottom:50px;
     justify-content: flex-end;
@@ -245,7 +250,7 @@ section .txt .title {
 .section05_bg .section05 .con .c_top img {
     border-top-left-radius: 200px;
     border-bottom-left-radius: 200px;
-    margin-left: 50px;
+    margin-left: 100px;
 }
 .section05_bg .section05 .con .c_btm {
     justify-content: flex-start;
@@ -253,7 +258,7 @@ section .txt .title {
 .section05_bg .section05 .con .c_btm img {
     border-top-right-radius: 200px;
     border-bottom-right-radius: 200px;
-    margin-right: 50px;
+    margin-right: 100px;
 }
 .section05_bg .section05 .con .c_btm .c_t_txt {}
 .section05_bg .section05 .con .c_btm .c_t_txt .c_tit {}
@@ -277,7 +282,6 @@ section .txt .title {
     width:30%; height:400px;
     display: flex; flex-flow: column nowrap;
     align-items:center; justify-content:center;
-    /* padding: 0 10px; */
     border-bottom-right-radius: 200px;
     border-top-left-radius: 200px;
     transition: all 0.5s;
@@ -303,7 +307,7 @@ section .txt .title {
 .section06_bg .section06 .con ul li .last {
     font-size: 1.44rem; letter-spacing:-0.02em;
     line-height: 35px; color: #C8D6BA;
-    width:250px; 
+    width:60%;
 }
 
 /* section07 */
@@ -319,25 +323,24 @@ section .txt .title {
 }
 .section07_bg .section07 .con {}
 .section07_bg .section07 .con ul {
-    width:900px;
     display: flex; flex-flow: column nowrap; 
     align-items: center;
 }
-.section07_bg .section07 .con ul li {}
+.section07_bg .section07 .con ul li {width:70%;}
 .section07_bg .section07 .con ul li:first-child {margin-bottom:70px;}
 .section07_bg .section07 .con ul li .question {display:flex; margin-bottom:50px;}
 .section07_bg .section07 .con ul li .question .alphabet {
-    font-size: 1.728rem; font-weight: 700; color: #799B44;
+    font-size:1.728rem; font-weight:700; color:#799B44;
     margin-right:20px;
 }
 .section07_bg .section07 .con ul li .question .info {
-    font-size: 1.728rem; letter-spacing:-0.02em; 
-    font-weight: 700; color: #799B44;
+    font-size:1.728rem; letter-spacing:-0.02em; 
+    font-weight:700; color:#799B44;
 }
 .section07_bg .section07 .con ul li .answer {display:flex;}
 .section07_bg .section07 .con ul li .answer .alphabet {
-    font-size: 1.728rem; font-weight: 700; 
-    margin-right:20px; color: #1B3601;
+    font-size: 1.728rem; font-weight:700; 
+    margin-right:20px; color:#1B3601;
 }
 .section07_bg .section07 .con ul li .answer .info {
     font-size: 1.44rem; letter-spacing:-0.02em;
