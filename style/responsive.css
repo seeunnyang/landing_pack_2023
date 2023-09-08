@@ -96,6 +96,12 @@
 /* ---------------------520px-------------------------------------------- */
 @media screen and (max-width:520px) {
     .section02_bg .section02 iframe {width:400px; height:250px;}
+    .section06_bg .section06 .con ul {
+        flex-flow: row wrap; align-items:center; justify-content:center;
+    }
+    .section06_bg .section06 .con ul li {width:45%;}
+    .section06_bg .section06 .con ul li:first-child {margin-right:10px;}
+    .section06_bg .section06 .con ul li:last-child {margin-top:10px;}
 }/* 520end(video) */
 
 
