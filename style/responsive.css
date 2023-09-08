@@ -1,5 +1,5 @@
 @media screen and (max-width:1200px) {
-    .section01_bg .section01,.section02_bg .section02,
+    .section01_bg .section01,.section02_bg .section02,.section03
     .section04_bg .section04,.section05_bg .section05,
     .section06_bg .section06, .section07_bg .section07 {
         width:calc(100% - 30px);
@@ -9,13 +9,16 @@
 }/* 1200px end */
 
 
-
+/* ---------------------900px-------------------------------------------- */
 @media screen and (max-width:900px) {
+    /* 주문하기 버튼 */
+    .order #order_btn {font-size:1.2rem;}
     /* section 묶음 */
     section {
         padding:100px 0;
         z-index:100;
     }
+    .section03 > *{width: calc(100% - 30px); margin: 0 auto;}
     /* title 묶음 */
     section .txt .title {font-size: 2.074rem;}
     /* section01 */
@@ -24,6 +27,7 @@
         background-size:cover;
     }
     .section01_bg .section01 {width:calc(100% - 30px);}
+    .section01_bg #mouse {bottom:200px;}
     /* section02 */
     .section02_bg .section02 {width:calc(100% - 30px);}
     .section02_bg .section02 .txt .title img {width:40px;}
@@ -31,8 +35,8 @@
     /* section03 */
     .section03 .txt .minititle {font-size: 1.44rem;}
     .section03 .txt .minititle em {font-size: 1.44rem;}
-    .section03 .con {width: 80%;}
-    .section03 .con img {width: 300px;}
+    .section03 .con {width:80%;}
+    .section03 .con img {width:45%;}
     .section03 .con img:first-child {margin-right:0;}
     .section03 .info button {font-size: 1rem; padding:20px 60px;}
     .section03 .info .period > div .p_tit {font-size:1rem;}
@@ -88,7 +92,20 @@
     }
 }/* 900 end */
 
+
+/* ---------------------520px-------------------------------------------- */
+@media screen and (max-width:520px) {
+    .section02_bg .section02 iframe {width:400px; height:250px;}
+}/* 520end(video) */
+
+
+/* ---------------------400px-------------------------------------------- */
 @media screen and (max-width:400px) {
+    body > * {min-width: 320px;}
+    /* 주문하기 버튼 */
+    .order {right:-187px;}
+    .order #order_btn {font-size:0.833rem; padding:8px 20px;}
+    /* section 묶음 */
     section {padding:50px 0;}
     /* title 묶음 */
     section .txt .title {font-size: 1.2rem; margin-bottom:30px;}
@@ -97,7 +114,7 @@
         background:url(../images/m_bg_1.png) no-repeat left center;
         background-size:cover;
     }
-    /* .section01_bg .section01 {margin-bottom: 247px;} */
+    .section01_bg .section01 {padding-bottom:247px;}
     .section01_bg .section01 .minititle {
         padding:8px 10px; font-size: 0.75rem; 
         margin-bottom: 20px;
@@ -108,9 +125,7 @@
     }
     .section01_bg .section01 h1 em {font-size: 2.5rem;}
     .section01_bg .section01 h2 {font-size: 1rem;}
-    .section01_bg #mouse {
-        width:30px ; left:50%; bottom:100px;
-    }
+    .section01_bg #mouse {width:30px; bottom:100px;}
     /* section02 */
     .section02_bg .section02 .txt .title img {width:20px; margin-left:5px;}
     .section02_bg .section02 iframe {width:300px; height:180px;}
